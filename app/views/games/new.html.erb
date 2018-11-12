@@ -1,0 +1,9 @@
+<pre>
+  <%= @letters.split %>
+</pre>
+
+<form action="/score" method="post">
+  <input type="text" name="answer">
+  <input type="submit">
+   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>
